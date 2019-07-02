@@ -12,10 +12,10 @@ $cv["EDUCATION"]="ISTANBUL CERRAHPASA UNIVERSITY COMPUTER ENGINEERING";
 $cv["MILITARY"]="POSTPONED";
 $cv["LANGUAGES1"]="English (Upper Intermediate)";
 $cv["LANGUAGES2"]="German (Beginner)";
-$cv["PROGRAMMING L1"]="JAVA (Medium)";
-$cv["PROGRAMMING L2"]="C (Low)";
-$cv["PROGRAMMING L3"]="HTML (Low)";
-$cv["PROGRAMMING L4"]="PHP (Elementary)";
+$cv["PROGRAMMING_L1"]="JAVA (Medium)";  //php allow to use space or special chars like öçşığü for keys but the others not! 
+$cv["PROGRAMMING_L2"]="C (Low)";	//just use ordinary english letter without space. you can use - or _. 
+$cv["PROGRAMMING_L3"]="HTML (Low)";	//don't use uppercase and lowercase letter together. decide one, there is more way. I'll tell you.
+$cv["PROGRAMMING_L4"]="PHP (Elementary)";	
 $cv["EXPERIENCE"]="Ubit Bilgi Teknolojileri Enerji Dan.Hiz.San.Tic.AS";
 $cv["Exp2.part"]="(Intern) 2019";
 
@@ -57,10 +57,10 @@ $cv["Exp2.part"]="(Intern) 2019";
   <b>PROGRAMMING LANGUAGES</b>
 </div> 
                <ul class="list-group"></ul>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING L1"];?></li>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING L2"];?></li>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING L3"];?></li>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING L4"];?></li><br>
+                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING_L1"];?></li>
+                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING_L2"];?></li>
+                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING_L3"];?></li>
+                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING_L4"];?></li><br>
                <div class="list heading;alert alert-info" role="alert">
                 <b>EXPERIENCE</b>
               </div>

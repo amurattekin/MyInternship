@@ -10,14 +10,10 @@ $cv["ADDRESS"]="BEYLIKDUZU/ISTANBUL";
 $cv["BIRTH"]="ISTANBUL 30.03.1996";
 $cv["EDUCATION"]="ISTANBUL CERRAHPASA UNIVERSITY COMPUTER ENGINEERING";
 $cv["MILITARY"]="POSTPONED";
-$cv["LANGUAGES1"]="English (Upper Intermediate)";
-$cv["LANGUAGES2"]="German (Beginner)";
-$cv["PROGRAMMING_L1"]="JAVA (Medium)";  //php allow to use space or special chars like öçşığü for keys but the others not! 
-$cv["PROGRAMMING_L2"]="C (Low)";	//just use ordinary english letter without space. you can use - or _. 
-$cv["PROGRAMMING_L3"]="HTML (Low)";	//don't use uppercase and lowercase letter together. decide one, there is more way. I'll tell you.
-$cv["PROGRAMMING_L4"]="PHP (Elementary)";	
+$cv["LANGUAGES"]=["ENGLISH (Upper Intermediate)","GERMAN (Beginner)"];
+$cv["PROGRAMMING"]=["JAVA (Medium)","C (Low)","HTML (Low)","PHP (Elementary)"];
 $cv["EXPERIENCE"]="Ubit Bilgi Teknolojileri Enerji Dan.Hiz.San.Tic.AS";
-$cv["Exp2.part"]="(Intern) 2019";
+$cv["EXP2"]="(Intern) 2019";
 
 ?>
 <html>
@@ -51,22 +47,22 @@ $cv["Exp2.part"]="(Intern) 2019";
   <b>LANGUAGES</b>
 </div>
 <ul class="list-group"></ul>
-  <li class="list-group-item,alert alert-info"><?php echo $cv["LANGUAGES1"];?></li>
-  <li class="list-group-item,alert alert-info"><?php echo $cv["LANGUAGES2"];?></li><br>
+  <li class="list-group-item,alert alert-info"><?php echo $cv["LANGUAGES"][0];?></li>
+  <li class="list-group-item,alert alert-info"><?php echo $cv["LANGUAGES"][1];?></li><br>
  <div class="list heading;alert alert-info" role="alert">
   <b>PROGRAMMING LANGUAGES</b>
 </div> 
                <ul class="list-group"></ul>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING_L1"];?></li>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING_L2"];?></li>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING_L3"];?></li>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING_L4"];?></li><br>
+                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING"][0];?></li>
+                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING"][1];?></li>
+                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING"][2];?></li>
+                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING"][3];?></li><br>
                <div class="list heading;alert alert-info" role="alert">
                 <b>EXPERIENCE</b>
               </div>
               <ul class="list-group"></ul>
   <li class="list-group-item,alert alert-info"><a href="https://www.linkedin.com/company/ubit-bilgi-teknolojileri-a-s"><ins><?php echo $cv["EXPERIENCE"];?> </a>
-    &emsp;</ins><?php echo $cv["Exp2.part"];?></li></ul>
+    &emsp;</ins><?php echo $cv["EXP2"];?></li></ul>
  
  
 

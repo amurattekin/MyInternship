@@ -14,7 +14,6 @@ $cv["languages"]=["ENGLISH (Upper Intermediate)","GERMAN (Beginner)"];
 $cv["programming"]=["JAVA (Medium)","C (Low)","HTML (Low)","PHP (Elementary)"];
 $cv["experience"]="Ubit Bilgi Teknolojileri Enerji Dan.Hiz.San.Tic.AS";
 $cv["exp2"]="(Intern) 2019";
-
 ?>
 <html>
 <header>
@@ -53,10 +52,16 @@ $cv["exp2"]="(Intern) 2019";
   <b>PROGRAMMING LANGUAGES</b>
 </div> 
                <ul class="list-group"></ul>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["programming"][0];?></li>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["programming"][1];?></li>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["programming"][2];?></li>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["programming"][3];?></li><br>
+               
+               
+               <?php
+               for ($i=0; $i <sizeof($cv["programming"]) ; $i++) { 
+                 ?>
+                  </li><li class="list-group-item,alert alert-info"><?php
+                  echo $cv["programming"][$i];
+               
+                
+               }?></li></ul> <br>
                <div class="list heading;alert alert-info" role="alert">
                 <b>EXPERIENCE</b>
               </div>

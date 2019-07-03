@@ -6,14 +6,14 @@ $cv["github"]="@amurattekin";
 $cv["title"]="Murat TEKIN CV";
 $cv["education1"]="Computer Engineering Student";
 $cv["phone"]="0533 046 09 17";
-$cv["ADDRESS"]="BEYLIKDUZU/ISTANBUL";
-$cv["BIRTH"]="ISTANBUL 30.03.1996";
-$cv["EDUCATION"]="ISTANBUL CERRAHPASA UNIVERSITY COMPUTER ENGINEERING";
-$cv["MILITARY"]="POSTPONED";
-$cv["LANGUAGES"]=["ENGLISH (Upper Intermediate)","GERMAN (Beginner)"];
-$cv["PROGRAMMING"]=["JAVA (Medium)","C (Low)","HTML (Low)","PHP (Elementary)"];
-$cv["EXPERIENCE"]="Ubit Bilgi Teknolojileri Enerji Dan.Hiz.San.Tic.AS";
-$cv["EXP2"]="(Intern) 2019";
+$cv["address"]="BEYLIKDUZU/ISTANBUL";
+$cv["birth"]="ISTANBUL 30.03.1996";
+$cv["education"]="ISTANBUL CERRAHPASA UNIVERSITY COMPUTER ENGINEERING";
+$cv["military"]="POSTPONED";
+$cv["languages"]=["ENGLISH (Upper Intermediate)","GERMAN (Beginner)"];
+$cv["programming"]=["JAVA (Medium)","C (Low)","HTML (Low)","PHP (Elementary)"];
+$cv["experience"]="Ubit Bilgi Teknolojileri Enerji Dan.Hiz.San.Tic.AS";
+$cv["exp2"]="(Intern) 2019";
 
 ?>
 <html>
@@ -38,31 +38,31 @@ $cv["EXP2"]="(Intern) 2019";
       <?php echo $cv["name"];?> <?php echo $cv["surname"];?> <br><?php echo $cv["education1"];?><br><?php echo $cv["email"];?> <br><?php echo $cv["phone"];?>
     </div></h2><br>
 		<ul class="list-group">
-  <li class="list-group-item,alert alert-info"><b>ADDRESS:</b> &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &nbsp;  <?php echo $cv["ADDRESS"];?></li>
-  <li class="list-group-item,alert alert-info"><b>BIRTH LOCATION& DATE:</b>&emsp;<?php echo $cv["BIRTH"];?></li>
-  <li class="list-group-item,alert alert-info"><b>EDUCATION:</b>&nbsp;&nbsp; &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<?php echo $cv["EDUCATION"];?></li>
-  <li class="list-group-item,alert alert-info"><b>MILITARY STATUS: </b> &nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<?php echo $cv["MILITARY"];?>
+  <li class="list-group-item,alert alert-info"><b>ADDRESS:</b> &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &nbsp;  <?php echo $cv["address"];?></li>
+  <li class="list-group-item,alert alert-info"><b>BIRTH LOCATION& DATE:</b>&emsp;<?php echo $cv["birth"];?></li>
+  <li class="list-group-item,alert alert-info"><b>EDUCATION:</b>&nbsp;&nbsp; &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<?php echo $cv["education"];?></li>
+  <li class="list-group-item,alert alert-info"><b>MILITARY STATUS: </b> &nbsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<?php echo $cv["military"];?>
 </li></ul><br>
 <div class="list heading;alert alert-info" role="alert">
   <b>LANGUAGES</b>
 </div>
 <ul class="list-group"></ul>
-  <li class="list-group-item,alert alert-info"><?php echo $cv["LANGUAGES"][0];?></li>
-  <li class="list-group-item,alert alert-info"><?php echo $cv["LANGUAGES"][1];?></li><br>
+  <li class="list-group-item,alert alert-info"><?php echo $cv["languages"][0];?></li>
+  <li class="list-group-item,alert alert-info"><?php echo $cv["languages"][1];?></li><br>
  <div class="list heading;alert alert-info" role="alert">
   <b>PROGRAMMING LANGUAGES</b>
 </div> 
                <ul class="list-group"></ul>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING"][0];?></li>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING"][1];?></li>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING"][2];?></li>
-                <li class="list-group-item,alert alert-info"><?php echo $cv["PROGRAMMING"][3];?></li><br>
+                <li class="list-group-item,alert alert-info"><?php echo $cv["programming"][0];?></li>
+                <li class="list-group-item,alert alert-info"><?php echo $cv["programming"][1];?></li>
+                <li class="list-group-item,alert alert-info"><?php echo $cv["programming"][2];?></li>
+                <li class="list-group-item,alert alert-info"><?php echo $cv["programming"][3];?></li><br>
                <div class="list heading;alert alert-info" role="alert">
                 <b>EXPERIENCE</b>
               </div>
               <ul class="list-group"></ul>
-  <li class="list-group-item,alert alert-info"><a href="https://www.linkedin.com/company/ubit-bilgi-teknolojileri-a-s"><ins><?php echo $cv["EXPERIENCE"];?> </a>
-    &emsp;</ins><?php echo $cv["EXP2"];?></li></ul>
+  <li class="list-group-item,alert alert-info"><a href="https://www.linkedin.com/company/ubit-bilgi-teknolojileri-a-s"><ins><?php echo $cv["experience"];?> </a>
+    &emsp;</ins><?php echo $cv["exp2"];?></li></ul>
  
  
 

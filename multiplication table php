@@ -3,10 +3,8 @@ function carpim($a){
 for($i=1;$i<11;$i++){
 	echo "<font color='tomato'>".$a."</font>".'x'."<font color='tomato'>".$i."</font>".'='."<font color='tomato'>".$a*$i."</font>";
 	?><br><?php
-
 }
 }
-
   ?>
 <html>
 <head>
@@ -30,47 +28,20 @@ ul {
 </style>
 </head>
 <body>
-
 	<div class="container">
 		<ul><h2 style="color:tomato;"><center>Multiplication Table</center></h2>
   <div class="row">
     
-    <div class="col"><li id="m1">
-      <?php carpim(1); ?>
-    </div></li>
-    <div class="col"><li id="m1">
-      <?php carpim(2); ?>
-    </div></li>
-    <div class="col"><li id="m1">
-      <?php carpim(3); ?>
-    </div></li>
-    <div class="col"><li id="m1">
-      <?php carpim(4); ?>
-    </div></li>
-    <div class="col"><li id="m1">
-     <?php carpim(5); ?>
-    </div></li>
-  </div>
-  <br>
-   <div class="row">
-    
-    <div class="col"><li id="m1">
-      <?php carpim(6); ?>
-    </div></li>
-    <div class="col"><li id="m1">
-      <?php carpim(7); ?>
-    </div></li>
-    <div class="col"><li id="m1">
-      <?php carpim(8); ?>
-    </div></li>
-    <div class="col"><li id="m1">
-      <?php carpim(9); ?>
-    </div></li>
-    <div class="col"><li id="m1">
-      <?php carpim(10); ?>
-    </div></li>
-  </div>
-  <ul>
+    <?php for($j=1;$j<11;$j++){
+       ?><div class="col"><li id="m1">
+      <?php carpim($j); ?>
+    </div></li> <?php
+    if($j==5){
+      ?></div></br><div class="row">
+    <?php } ?> <?php } ?>
+
+    </div>
+  </ul>
 </div>
 </body>
 </html>

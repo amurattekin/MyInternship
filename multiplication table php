@@ -1,0 +1,76 @@
+<?php
+function carpim($a){
+for($i=1;$i<11;$i++){
+	echo "<font color='tomato'>".$a."</font>".'x'."<font color='tomato'>".$i."</font>".'='."<font color='tomato'>".$a*$i."</font>";
+	?><br><?php
+
+}
+}
+
+  ?>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.
+	min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+	crossorigin="anonymous">
+	<title>Multiplication Table</title>
+	<style>
+	#m1{
+list-style-type:none;
+border: 1px solid black;
+text-align: center;
+padding: 5px;
+    margin: 5px;
+}
+ul {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+</style>
+</head>
+<body>
+
+	<div class="container">
+		<ul><h2 style="color:tomato;"><center>Multiplication Table</center></h2>
+  <div class="row">
+    
+    <div class="col"><li id="m1">
+      <?php carpim(1); ?>
+    </div></li>
+    <div class="col"><li id="m1">
+      <?php carpim(2); ?>
+    </div></li>
+    <div class="col"><li id="m1">
+      <?php carpim(3); ?>
+    </div></li>
+    <div class="col"><li id="m1">
+      <?php carpim(4); ?>
+    </div></li>
+    <div class="col"><li id="m1">
+     <?php carpim(5); ?>
+    </div></li>
+  </div>
+  <br>
+   <div class="row">
+    
+    <div class="col"><li id="m1">
+      <?php carpim(6); ?>
+    </div></li>
+    <div class="col"><li id="m1">
+      <?php carpim(7); ?>
+    </div></li>
+    <div class="col"><li id="m1">
+      <?php carpim(8); ?>
+    </div></li>
+    <div class="col"><li id="m1">
+      <?php carpim(9); ?>
+    </div></li>
+    <div class="col"><li id="m1">
+      <?php carpim(10); ?>
+    </div></li>
+  </div>
+  <ul>
+</div>
+</body>
+</html>

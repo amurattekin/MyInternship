@@ -1,0 +1,45 @@
+<?php
+
+$days = ["Pazartesi","Salı","Çarşamba","Perşembe","Cuma"];
+
+
+$week=[
+	["Matematik","Matematik","Fen ve Teknoloji","Fen ve Teknoloji"],
+	["Boş","Resim","Beden Eğitimi","Beden Eğitimi"],
+	["Türkçe","Türkçe","Matematik","Matematik"],
+	["Coğrafya","Coğrafya","Boş","Boş"],
+	["Tarih","Müzik","Türkçe","Türkçe"]
+];
+ 
+
+$lesson_max = 4;
+?>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+  text-align: center;
+}
+</style>
+
+<table border="1">
+	<tr>
+		<?php foreach ($days as $day):?>
+			<th><?php echo $day?></th>
+		<?php endforeach;?>
+	</tr>
+	<?php for($lesson_index=0;$lesson_index<$lesson_max;$lesson_index++):?>
+		<tr>
+			<?php for($day_index=0;$day_index<count($week);$day_index++):?>
+			<td><?php echo $week[$day_index][$lesson_index];?></td>
+			<?php endfor;?>
+
+		</tr>
+	<?php endfor;?>
+</table>

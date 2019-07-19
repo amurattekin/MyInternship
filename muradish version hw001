@@ -1,0 +1,61 @@
+<?php 
+	$listem=array("Pazartesi","Salı","Çarşamba","Perşembe","Cuma","Matematik","Boş","Türkçe",
+	"Coğrafya","Tarih","Matematik","Resim","Türkçe","Coğrafya","Müzik","Fen ve Teknoloji",
+	"Beden Eğitimi","Matematik","Boş","Türkçe","Fen ve Teknoloji","Beden Eğitimi","Matematik","Boş","Türkçe");
+//
+function yazdir($a,$listem){
+
+	
+	
+	return $listem[$a];
+}
+ ?>
+
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" /> 
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<table>
+	<?php 
+for($i=0;$i<count($listem);$i++){
+	if ($i%5==0) {
+          ?><tr><?php
+	}
+
+	if($i<5){ 
+    ?><th><?php echo yazdir($i,$listem);?></th><?php
+	}
+	if($i>4){
+		?><td><?php echo  yazdir($i,$listem); ?></td><?php
+	}
+	if(($i+1)%5==0){
+		?></tr><?php
+	}
+}
+	?>
+</table>
+
+</body>
+</html>

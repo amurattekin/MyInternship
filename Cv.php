@@ -11,7 +11,7 @@
       $cv["education"]="ISTANBUL CERRAHPASA UNIVERSITY COMPUTER ENGINEERING";
      $cv["military"]="POSTPONED";
     $cv["languages"]=["ENGLISH (Upper Intermediate)","GERMAN (Beginner)"];
-   $cv["programming"]=["JAVA (Medium)","C (Low)","HTML (Low)","PHP (Elementary)"];
+   $cv["programming"]=["JAVA (Medium)","C (Low)","HTML (Medium)","PHP (Low)"];
   $cv["experience"]="Ubit Bilgi Teknolojileri Enerji Dan.Hiz.San.Tic.AS";
  $cv["exp2"]="(Intern) 2019";
 ?>
